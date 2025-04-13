@@ -19,7 +19,7 @@ import com.jobpage.service.jobService;
 @WebServlet(asyncSupported = true, urlPatterns = { "/jobpage2" })
 public class Job extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private jobService jobService=new jobService();
+	/*private jobService jobService=new jobService();*/
        
     /**
      * @see HttpServlet#HttpServlet()
