@@ -33,7 +33,7 @@
 		
 		        <div class="container2">
 		            <label for="lastname">Last Name:</label>
-		            <input type="text" id="lastname" name="Lastname" >
+		            <input type="text" id="lastname" name="lastName" >
 		
 		            <label for="birthday">Birthday:</label>
 		            <input type="date" id="dob" name="dob" >

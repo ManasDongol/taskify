@@ -1,4 +1,4 @@
-package com.jobpage.controller;
+package com.Taskify.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

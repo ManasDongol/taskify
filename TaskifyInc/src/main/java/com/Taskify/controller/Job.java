@@ -1,4 +1,4 @@
-package com.jobpage.controller;
+package com.Taskify.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-import com.jobpage.model.jobModel;
-import com.jobpage.service.jobService;
+import com.Taskify.model.jobModel;
+import com.Taskify.service.jobService;
 
 
 /**
