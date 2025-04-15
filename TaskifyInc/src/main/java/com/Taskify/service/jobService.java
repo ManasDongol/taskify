@@ -1,4 +1,4 @@
-package com.jobpage.service;
+package com.Taskify.service;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,8 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jobpage.config.DBconfig;
-import com.jobpage.model.jobModel;
+import com.Taskify.config.TaskifyDBconfig;
+import com.Taskify.model.jobModel;
 
 
 public class jobService {
@@ -15,7 +15,7 @@ public class jobService {
 	public jobService() {
 		
         try {
-            this.dbConn = DBconfig.getDbConnection();
+            this.dbConn = TaskifyDBconfig.getDbConnection();
         } catch (SQLException | ClassNotFoundException ex) {
             System.err.println("Database connection error: " + ex.getMessage());
             ex.printStackTrace();
@@ -25,7 +25,7 @@ public class jobService {
 	public List<jobModel> getAllJobs() throws SQLException, ClassNotFoundException {
 	    List<jobModel> jobList = new ArrayList<>();
 
-	    Connection dbConn = DBconfig.getDbConnection();
+	    Connection dbConn = TaskifyDBconfig.getDbConnection();
 
 	    if(dbConn == null) {
 	        System.err.println("Database connection is not available.");

@@ -1,11 +1,11 @@
-package com.jobpage.config;
+package com.Taskify.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DBconfig {
-	private static final String NAME_DB = "job";
+public class TaskifyDBconfig {
+	private static final String NAME_DB = "taskifydb";
     private static final String URL = "jdbc:mysql://localhost:3306/" + NAME_DB;
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";

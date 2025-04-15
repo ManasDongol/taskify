@@ -1,4 +1,4 @@
-package com.jobpage.controller;
+package com.Taskify.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,19 +8,18 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class Register
+ * Servlet implementation class Aboutus
  */
-@WebServlet("/Register")
-public class Register extends HttpServlet {
+@WebServlet("/aboutus")
+public class Aboutus extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Register() {
+    public Aboutus() {
         super();
         // TODO Auto-generated constructor stub
-        
     }
 
 	/**
@@ -28,7 +27,7 @@ public class Register extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("/WEB-INF/pages/register.jsp").forward(request, response);
+		  request.getRequestDispatcher("/WEB-INF/pages/aboutus.jsp").forward(request, response);
 	}
 
 	/**

@@ -1,4 +1,4 @@
-package com.jobpage.model;
+package com.Taskify.model;
 
 public class jobModel {
 	private String job_name;
