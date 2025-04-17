@@ -10,6 +10,9 @@
 		    body {
 		        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		        background-color: rgba(49, 57, 251, 1);
+	      	   	background-image: url('images/texture/grain3.png');
+ 				background-repeat: repeat;
+ 				background-size: auto;
 		        margin: 0;
 		        padding: 0;
 		    }
@@ -57,6 +60,8 @@
 		        border-radius: 20px;
 		        border: 1px solid #ddd;
 		        font-size: 16px;
+		        height:30px;
+		        margin-top:120px;
 		    }
 		    
 		    /* Main container */
@@ -73,10 +78,11 @@
 		        top: 120px; /* Position below navbar */
 		        left: calc((100% - 1200px) / 2); /* Center align with container */
 		        width: 280px;
-		        background-color: #b8bbff;
+		        background-color: rgba(255,255,255);
 		        padding: 20px;
 		        border-radius: 10px;
 		        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		        margin-top:70px;
 		    }
 		    
 		    /* Profile section in sidebar */
@@ -131,7 +137,7 @@
 		        padding: 20px;
 		        margin-bottom: 20px;
 		        margin-left:20px;
-		        
+		        margin-top:70px;
 		    }
 		    
 		    .job {
@@ -222,7 +228,7 @@
 		    }
 		    
 		    .apply-btn {
-		        background-color: #4CAF50;
+		        background-color: #000354  ;
 		        color: white;
 		        border: none;
 		        padding: 8px 16px;
@@ -231,29 +237,15 @@
 		        font-weight: 500;
 		    }
 		    
-		    .save-btn {
-		        background-color: white;
-		        color: #4CAF50;
-		        border: 1px solid #4CAF50;
-		        padding: 8px 16px;
-		        border-radius: 4px;
-		        cursor: pointer;
-		        margin-right: 10px;
-		        font-weight: 500;
-		    }
+		   
     
    
     </style>
 </head>
 <body>
+
     <div class="topcontainer">
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Jobs</a>
-            <a href="#">Create Jobs</a>
-            <a href="#">About us</a>
-            <a href="#">Profile</a>
-        </div>
+        <jsp:include page="NewHeader.jsp" />
         
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Search for jobs, skills, or companies...">
@@ -270,15 +262,7 @@
                 <span style="font-size: 10px;">Data Engineer at Ekinum</span>
                 <br>
                 <div class="applications-count">3 Active Applications</div>
-                 <div style="margin-top: 30px; padding: 15px; background: #e3e6ff; border-radius: 8px;">
-                <h4 style="margin-top: 0; color: #333;">Job Application Tips</h4>
-                <ul style="padding-left: 20px; margin-bottom: 0;">
-                    <li>Apply to jobs that match with your resume</li>
-                    <li></li>
-                    <li>Keep your application clear and concise</li>
-                    <li>Apply to multiple jobs to maximize hiring chances</li>
-                </ul>
-            </div>
+                 
             </div>
             
             <!-- Filter options can be added here -->
@@ -324,7 +308,7 @@
                             <span class="posted-date">Posted 2 days ago</span>
                         </div>
                         <div>
-                            <button class="save-btn">Save</button>
+                            
                             <button class="apply-btn">Apply Now</button>
                         </div>
                     </div>
@@ -365,7 +349,7 @@
                             <span class="posted-date">Posted 5 days ago</span>
                         </div>
                         <div>
-                            <button class="save-btn">Save</button>
+                           
                             <button class="apply-btn">Apply Now</button>
                         </div>
                     </div>
@@ -407,7 +391,7 @@
 			            <span class="posted-date">Posted 3 days ago</span>
 			        </div>
 			        <div>
-			            <button class="save-btn">Save</button>
+			      
 			            <button class="apply-btn">Apply Now</button>
 			        </div>
 			    </div>
@@ -447,7 +431,7 @@
             <span class="posted-date">Posted 2 days ago</span>
         </div>
         <div>
-            <button class="save-btn">Save</button>
+          
             <button class="apply-btn">Apply Now</button>
         </div>
     </div>
@@ -494,5 +478,9 @@
             </div>
         </div>
     </div>
+    <!-- svg: first layer -->
+
+
+
 </body>
 </html>

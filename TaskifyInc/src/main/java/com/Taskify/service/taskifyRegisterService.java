@@ -52,7 +52,7 @@ public class taskifyRegisterService {
 	
 	                    memberstmt.setString(4, memberdata.getGender());
 	                    memberstmt.setString(5, memberdata.getEmail());
-	                    memberstmt.setInt(6, memberdata.getPhonenumber());
+	                    memberstmt.setString(6, memberdata.getPhonenumber());
 	                    memberstmt.setInt(7, userId); // Set the User_ID as the foreign key
 		            	
 	                    int memberRowsAffected = memberstmt.executeUpdate();

@@ -10,13 +10,13 @@ public class memberModel {
     private LocalDate dob;
     private String gender;
     private String email;
-    private int phonenumber;
+    private String phonenumber;
     private String password;
 	private int User_ID;
 
     // Constructor
     public memberModel( String firstName, String lastName, LocalDate dob, String gender,
-            String email, int phonenumber) {
+            String email, String phonenumber) {
         super();
         
         this.firstName = firstName;
@@ -88,11 +88,11 @@ public class memberModel {
     }
 
     // Getter and Setter for phonenumber
-    public int getPhonenumber() {
+    public String getPhonenumber() {
         return this.phonenumber;
     }
 
-    public void setPhonenumber(int phonenumber) {
+    public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
     }
 
